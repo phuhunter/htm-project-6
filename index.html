@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <!-- Hiệu ứng Animation -->
         <link
             rel="stylesheet"
             href="https://unpkg.com/aos@2.3.4/dist/aos.css"
@@ -15,11 +16,217 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-        <!-- FAVICON-->
+        <!-- Font DM Sans -->
+        <!-- Google Fonts: DM Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&display=swap"
+            rel="stylesheet"
+        />
 
+        <!-- FAVICON-->
+        <link
+            rel="icon"
+            type="image/png"
+            href="./assets/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
         <title>Project 6 An Interactive Designer</title>
     </head>
     <body>
+        <!-- Header on Table and PC -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a
+                        href="mailto:huytv260692@gmail.com"
+                        class="header__action"
+                    >
+                        <div class="header__action-wrap">
+                            <img
+                                src="./assets/img/heart.svg"
+                                alt=""
+                                class="header__icon"
+                            />
+                        </div>
+                        <p class="header__action-text">hi@arif.interactive</p>
+                    </a>
+                    <a href="#!" class="header__logo">
+                        <img
+                            src="./assets/img/logo.png"
+                            alt=""
+                            class="header__img"
+                        />
+                    </a>
+                    <nav class="header__pc-nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#!" class="header__link">Projects</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#!" class="header__link">Journey</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#!" class="header__link">Service</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#!" class="header__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-------- Mobile Header------  -->
+        <header class="header__mobile">
+            <div class="container">
+                <div class="header__mobile-inner">
+                    <a href="#!" class="mobile-logo">
+                        <img
+                            src="./assets/img/logo.png"
+                            alt=""
+                            class="mobile-logo__img"
+                        />
+                    </a>
+                    <div class="header__mobile-action">
+                        <a
+                            href="mailto:huytv260692@gmail.com"
+                            class="header__mobile-action-wrap"
+                        >
+                            <img
+                                src="./assets/img/heart-2.svg"
+                                alt=""
+                                class="header__icon"
+                            />
+                        </a>
+                        <input
+                            hidden
+                            type="checkbox"
+                            name="menu-checkbox"
+                            id="menu-checkbox"
+                            class="header__mobile-input"
+                        />
+                        <label
+                            class="header__mobile-action-wrap mobile-toggle"
+                            for="menu-checkbox"
+                        >
+                            <img
+                                src="./assets/img/nav.svg"
+                                alt=""
+                                class="header__icon"
+                            />
+                        </label>
+                        <!-- Overlay -->
+                        <label for="menu-checkbox" class="overlay"></label>
+                        <!-- Menu content -->
+                        <nav class="menu-drawer">
+                            <a
+                                href="mailto:huytv260692@gmail.com"
+                                class="menu-drawer__email"
+                            >
+                                <p class="menu-drawer__text">
+                                    hi@arif.interactive
+                                </p>
+                            </a>
+                            <ul class="menu-drawer__list">
+                                <li class="menu-drawer__item">
+                                    <a href="" class="menu-drawer__link"
+                                        >Projects</a
+                                    >
+                                </li>
+                                <li class="menu-drawer__item">
+                                    <a href="" class="menu-drawer__link"
+                                        >Journey</a
+                                    >
+                                </li>
+                                <li class="menu-drawer__item">
+                                    <a href="" class="menu-drawer__link"
+                                        >Service</a
+                                    >
+                                </li>
+                                <li class="menu-drawer__item">
+                                    <a href="" class="menu-drawer__link"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-------------- HERO SECTION------------ -->
+        <section class="hero">
+            <div class="container">
+                <div class="row hero__inner">
+                    <figure
+                        class="hero__media col-lg-6 col-xl-6 col-md-6 col-12"
+                    >
+                        <img
+                            src="./assets/img/hero-img-2.png"
+                            alt=""
+                            class="hero__img"
+                        />
+                        <img
+                            src="./assets/img/hero_decor.svg"
+                            alt=""
+                            class="hero__decor"
+                        />
+                    </figure>
+                    <section class="hero__content col-lg-5 col-md-5 col-12">
+                        <h1 class="hero-title">An Interactive Designer</h1>
+                        <p class="hero__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                        <div class="hero__action">
+                            <a href="#!" class="hero__btn btn">Book a Call</a>
+                            <a href="#!" class="hero__link">My Works</a>
+                        </div>
+                        <div class="hero__social">
+                            <p class="hero__social-text">Follow me on:</p>
+                            <div class="hero__social-group">
+                                <a href="#!" class="hero__social-wrap-img">
+                                    <img
+                                        src="./assets/img/hero_icon-1.svg"
+                                        alt=""
+                                        class="hero__social-img"
+                                    />
+                                </a>
+                                <a href="#!" class="hero__social-wrap-img">
+                                    <img
+                                        src="./assets/img/hero_icon-2.svg"
+                                        alt=""
+                                        class="hero__social-img"
+                                    />
+                                </a>
+                                <a href="#!" class="hero__social-wrap-img">
+                                    <img
+                                        src="./assets/img/hero_icon-3.svg"
+                                        alt=""
+                                        class="hero__social-img"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
         <!-- AOS JavaScript -->
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
         <!-- Khởi tạo AOS -->

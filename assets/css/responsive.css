@@ -1,21 +1,207 @@
-/* Những thiết bị nhỏ hơn 576px sẽ viết ở ngoài này */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* Base: >= 1400px */
+/* DESKTOP FIRST */
+/* .header .container {
+    max-width: 1330px;
+} */
+.header__mobile {
+    display: none;
+}
+@media (max-width: 1399.98px) {
+    /* XL */
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 1199.98px) {
+    .hero__inner {
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    .header__action-text {
+        font-size: 20px;
+    }
+    .header__logo {
+        width: 74px;
+        height: 74px;
+    }
+    .header__pc-nav {
+        margin-left: auto;
+    }
+    .header__link {
+        font-size: 14px;
+    }
+    .header__list {
+        gap: 20px;
+    }
+
+    .hero__img {
+        width: 330px;
+        height: 453px;
+    }
+    .hero__decor {
+        width: 142.85%;
+        height: 110.7%;
+        bottom: 0;
+        left: -29%;
+    }
+    .hero-title {
+        width: 300px;
+        font-size: 50px;
+        line-height: 1.18;
+        letter-spacing: -2.24px;
+    }
+    .hero__desc {
+        width: 300px;
+    }
+    .hero__social {
+        display: block;
+        margin-top: 50px;
+    }
+    .hero__social-group {
+        margin-top: 20px;
+    }
+    /* LG */
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (max-width: 991.98px) {
+    /* MD */
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (max-width: 767.98px) {
+    /* SM */
+    /* --------Header---- */
+    .header {
+        display: none;
+    }
+    .header__mobile {
+        display: block;
+        background: #fbfaff;
+        border-bottom: 1px solid #d6d3e2;
+        padding-bottom: 15.5px;
+        padding-top: 20px;
+    }
+    .header__mobile-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobile-logo {
+        width: 37px;
+        height: 44px;
+        display: block;
+    }
+    .mobile-logo__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .header__mobile-action {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .header__mobile-action-wrap {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid rgba(93, 59, 238, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        /* transition: opacity 5s ease; */
+    }
+    #menu-checkbox:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-drawer {
+        position: fixed;
+        inset: 0 0 0 40%;
+        background-color: #fff;
+        z-index: 10;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+    }
+    .menu-drawer__text {
+        color: #080415;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px; /* 136.364% */
+        text-decoration-line: underline;
+    }
+    #menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+    .menu-drawer__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .menu-drawer__link {
+        font-size: 14px;
+        color: #51586a;
+    }
+    /*------HERO------ */
+    .hero__inner {
+        row-gap: 30px;
+    }
+    .hero__content {
+        order: 1;
+    }
+    .hero__media {
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-title {
+        width: 260px;
+        font-size: 42px;
+        line-height: 50px;
+        letter-spacing: -1.68px;
+    }
+    .hero__desc {
+        width: 318px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .hero__action {
+        margin-top: 30px;
+    }
+    .hero__social {
+        margin-top: 30px;
+        gap: 10px;
+    }
+    .hero__social-group {
+        gap: 15.5px;
+    }
+    .hero__img {
+        width: 259px;
+        height: 355px;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+    }
+    .hero__decor {
+        width: 100%;
+        height: 120%;
+        bottom: -1px;
+        left: 4px;
+    }
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+@media (max-width: 575.98px) {
+    /* XS */
 }
