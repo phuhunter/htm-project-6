@@ -1,0 +1,36 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+/* -----------COMMON CSSS------------ */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover {
+    opacity: 0.7;
+    opacity: 0.7 !important;
+}
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+}
