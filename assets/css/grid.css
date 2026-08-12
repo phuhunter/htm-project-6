@@ -3,7 +3,7 @@
 .container-fluid,
 .container {
     --gutter-x: 30px;
-    --gutter-y: 0;
+    --gutter-y: 30px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
