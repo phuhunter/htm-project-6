@@ -194,3 +194,45 @@ button {
 .hero__social-img:hover {
     transform: scale(1.5);
 }
+
+/* --------CLIENTS----------- */
+.clients {
+    padding-top: 98px;
+}
+.clients__inner {
+    display: flex;
+    align-items: center;
+}
+.clients__title {
+    width: 352px;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: -4%;
+    position: relative;
+    padding-left: 99px;
+}
+.clients__title::before {
+    content: "";
+    position: absolute;
+    width: 86px;
+    height: 2px;
+    background-color: #5d3bee;
+    display: inline-block;
+    top: 25px;
+    left: 0px;
+}
+.clients__list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    margin-left: 105px;
+    row-gap: 41px;
+    column-gap: 50px;
+}
+.clients__item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
