@@ -35,6 +35,9 @@ button {
     border: none;
     outline: none;
 }
+.show-in-mobile {
+    display: none;
+}
 /* --------HEADER----------- */
 .header {
     padding-top: 20px;
@@ -235,4 +238,67 @@ button {
     display: flex;
     align-items: center;
     gap: 13px;
+}
+/* -------------- SERVICES-------------- */
+.service {
+    margin-top: 133px;
+}
+.service__title {
+    color: #080415;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: -2.24px;
+    width: fit-content;
+    margin-inline: auto;
+}
+.service__desc {
+    color: #51586a;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    width: 534px;
+    margin-inline: auto;
+    margin-top: 20px;
+}
+
+.service__tracker {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+.service__card {
+    /* width: 370px; */
+    /* height: 306px; */
+    background: #fbfaff;
+    padding: 33px 43px;
+}
+.service__img-wrap {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 1px solid rgba(8, 4, 21, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service__img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.service__card-title {
+    color: #080415;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -1.28px;
+    margin-top: 22px;
+}
+.service__card-desc {
+    color: #51586a;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 15px;
 }
