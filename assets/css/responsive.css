@@ -172,9 +172,12 @@
     /*------HERO------ */
     .hero__inner {
         row-gap: 30px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .hero__content {
         order: 1;
+        margin-left: 0;
     }
     .hero__media {
         order: 2;
@@ -211,6 +214,7 @@
         z-index: 2;
     }
     .hero__decor {
+        /* display: none; */
         width: 100%;
         height: 120%;
         bottom: -1px;
@@ -230,7 +234,8 @@
     .clients__list {
         grid-template-columns: repeat(2, auto);
         margin-top: 41px;
-        padding: 0 20px;
+        /* display: none; */
+        padding-left: 30px;
     }
 }
 
