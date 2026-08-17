@@ -208,7 +208,8 @@
         letter-spacing: -1.68px;
     }
     .hero__desc {
-        width: 318px;
+        /* width: 318px; */
+        width: auto;
         font-size: 16px;
         line-height: 26px;
     }
@@ -263,7 +264,8 @@
         letter-spacing: -1.44px;
     }
     .service__desc {
-        width: 350px;
+        max-width: 350px;
+        width: 100%;
         font-size: 16px;
         line-height: 26px;
     }
@@ -309,9 +311,9 @@
         background-color: #5d3bee;
     }
     .projects {
-        /* display: none; */
+        padding-top: 69px;
+        padding-bottom: 60px;
     }
-
     .projects__title {
         color: #fff;
         font-size: 36px;
@@ -320,7 +322,8 @@
         width: 301px;
     }
     .projects__desc {
-        width: 350px;
+        max-width: 350px;
+        width: 100%;
         color: #fff;
         font-size: 16px;
         line-height: 26px;
@@ -330,8 +333,11 @@
         align-items: center;
     }
     .project__card-media {
-        width: 122px;
-        height: 93px;
+        /* width: 122px;
+        height: 93px; */
+        width: 100%;
+        height: auto;
+        aspect-ratio: 246 / 187;
     }
     .project__card-title {
         color: #080415;
@@ -343,14 +349,151 @@
         color: #51586a;
         font-size: 14px;
         line-height: 20px;
-        width: 176px;
+        /* width: 176px; */
+        width: 100%;
+        max-width: 100%;
     }
     .project__card-link {
         font-size: 16px;
         line-height: 28px;
     }
+
+    .about__eyebrown-text {
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+    }
+    .about__eyebrown-icon {
+        width: 18px;
+        height: 18px;
+        object-fit: cover;
+    }
+    .about__title {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -1.44px;
+    }
+    .about__desc {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 350px;
+        width: 100%;
+    }
+    .about__stats {
+        /* text-align: center; */
+    }
+    .about__stats-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: flex-start; */
+        gap: 5px;
+    }
+    .about__number {
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 0.9px;
+        text-align: left;
+        display: block;
+        width: 74px;
+    }
+    .about__text {
+        width: 74px;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: left;
+    }
+    .about__video-wrap {
+        height: 276px;
+    }
+    .video__bottom {
+        width: 118px;
+        height: 44px;
+        color: #51586a;
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .feedback__title {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 42px;
+        letter-spacing: -1.44px;
+    }
+    .feedback__desc {
+        /* width: 350px; */
+        width: 100%;
+        color: #51586a;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .feedback__review {
+        /* width: 350px; */
+        width: auto;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .feedback__customer-name {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+    .feedback__decor {
+        width: 96.163px;
+        height: 71.126px;
+        object-fit: cover;
+    }
+
+    /* FAQS */
+    .faqs__title {
+        max-width: 316px;
+        width: 100%;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -1.44px;
+        margin-bottom: 42px;
+    }
+    .faqs__question-text {
+        width: 264px;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.96px;
+    }
+    .faqs__question-icon {
+        width: 33px;
+        height: 33px;
+    }
+    .faqs__answer {
+        width: 316px;
+        font-size: 16px;
+        line-height: 26px;
+    }
 }
 
 @media (max-width: 575.98px) {
     /* XS */
+    .hero {
+        /* display: none; */
+    }
+    .clients {
+        /* display: none; */
+    }
+    .clients__list {
+        grid-template-columns: repeat(1, auto);
+    }
+    .service {
+        /* display: none; */
+    }
+    .projects {
+        /* display: none; */
+    }
+    .about {
+        /* display: none; */
+    }
+    .feedback {
+        /* display: none; */
+    }
+    .faqs {
+        /* display: none; */
+    }
 }
