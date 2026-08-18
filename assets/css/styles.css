@@ -767,7 +767,7 @@ button {
     padding: 68px 0;
     background: #fbfaff;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .cta__decor {
     position: absolute;
@@ -821,4 +821,63 @@ button {
     line-height: 30px;
     display: flex;
     margin: 30px auto 0;
+    position: relative;
+    z-index: 2;
+}
+/* ----------FOOTER---- */
+.footer {
+    margin-top: 50px;
+}
+.footer__top {
+    display: flex;
+    align-items: center;
+}
+.footer__bottom {
+    margin-top: 32px;
+    padding: 18px 0;
+    position: relative;
+}
+.footer__bottom::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid rgba(12, 7, 32, 0.2);
+    width: 95vw;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__copy-right {
+    color: #525771;
+    font-size: 18px;
+    line-height: 30px;
+}
+.footer__menu {
+    display: flex;
+    gap: 10px;
+}
+.footer__menu-item {
+    color: #525771;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.54px;
+    position: relative;
+}
+.footer__menu-item + .footer__menu-item {
+    margin-left: 31px;
+}
+.footer__menu-item + .footer__menu-item::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background-color: #525771;
+    opacity: 0.6;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -8px;
 }
